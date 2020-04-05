@@ -1,0 +1,128 @@
+body {
+  height: 100%;
+}
+
+/* ===============================================
+    SUCCESS PAGE
+======================================================*/
+.success-msg {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 200%;
+  color: green;
+  text-transform: capitalize;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.login-btn {
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+/* ======================================================
+        LOGIN PAGE
+========================================================= */
+.login-btn a {
+  color: #333;
+  transition: all 1s ease;
+}
+
+.login-btn a:hover {
+  color: lightseagreen;
+}
+
+.recovery {
+  font-size: 14px;
+}
+
+.recovery a {
+  color: #66ccff;
+  text-decoration: underline;
+}
+
+.recovery a:hover {
+  color: rgb(10, 77, 133);
+}
+
+/* ===================================================
+    PROFILE PAGE
+====================================================== */
+.user-page {
+    /* margin-bottom: 120px; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 250px;
+  background: url(../img/patrick-tomasso-QMDap1TAu0g-unsplash.jpg) center/cover
+    no-repeat;
+}
+
+.user-details {
+  text-align: center;
+  color: #fff;
+}
+
+.profile-pic {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 55%;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: all 1s ease;
+}
+
+.profile-pic:hover {
+  transform: rotate(360deg);
+  border: 4px solid #66ccff;
+}
+
+.profile-pic img {
+  border-radius: 50%;
+  transition: all 1s ease;
+}
+
+.profile-pic img:hover {
+  transform: scale(1.2);
+}
+
+.user-stats{
+    /* background-color: rgba(245, 241, 241, 0.74); */
+    padding: 120px 0 20px;
+    
+}
+
+.user-stats .post, .followers, .following{
+    border-bottom: 2px solid #66ccff;
+}
+
+.user-stats h4{
+    color: #555;
+    
+    
+}
+
+.user-stats p{
+    color: #aaa;
+    
+    
+
+}
+/* ================
+    LOADER
+=======================*/
+
+.loader {
+  display: none;
+}
+
+.to-login {
+  visibility: hidden;
+}
+
+.animated {
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+}
