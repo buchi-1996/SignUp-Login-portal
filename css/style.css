@@ -2,6 +2,39 @@ body {
   height: 100%;
 }
 
+.brand{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.company-name p{
+  position: relative;
+  bottom: -9px;
+  font-size: 23px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  
+  
+  
+
+}
+header{
+  position: relative;
+}
+
+.logo{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+header .company-name .blue-t{
+  font-weight: bold;
+  color: #66ccff;
+  transform: rotateY(-30deg);
+}
 /* ===============================================
     SUCCESS PAGE
 ======================================================*/
@@ -25,6 +58,15 @@ body {
 .login-btn a {
   color: #333;
   transition: all 1s ease;
+}
+.login-switch{
+  font-size: 14px;
+  color: #444;
+}
+
+.login-switch a{
+  text-decoration: underline;
+  font-size: 14px;
 }
 
 .login-btn a:hover {

@@ -23,7 +23,7 @@ class UI {
         const errorMessage = document.createElement('div');
         const container = document.querySelector('.container');
         errorMessage.appendChild(document.createTextNode(message));
-        errorMessage.className = 'alert alert-danger col-4 mx-auto text-center mt-3';
+        errorMessage.className = 'alert alert-danger col-12 col-md-4 mx-auto text-center text-light font-weight-bold mt-3';
         container.insertBefore(errorMessage, loader);
         error.style.border = '1px dashed red';
         setTimeout(removeError, 3000);
@@ -77,13 +77,14 @@ signUp.addEventListener('click', function (e) {
         const userPassword = document.getElementById('password').value.toLowerCase();
 
         loader.style.display = 'none';
-
+        let loginSwitch = document.querySelector('.login-switch');
         const data = new registeredUsers(userName, userEmail, userPassword);
         console.log(data);
         ui = new UI();
 
         if (userName && userEmail && userPassword) {
             alert(` SUCCESSFUL`)
+            loginSwitch.style.display = 'none';
             redirectBtn.style.visibility = 'visible';
             ui.clearInputs(inputs);
            
