@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   height: 100%;
 }
@@ -47,10 +51,7 @@ header .company-name .blue-t{
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.login-btn {
-  text-decoration: underline;
-  font-size: 20px;
-}
+
 
 /* ======================================================
         LOGIN PAGE
@@ -160,11 +161,5 @@ header .company-name .blue-t{
   display: none;
 }
 
-.to-login {
-  visibility: hidden;
-}
 
-.animated {
-  animation-duration: 2.5s;
-  animation-iteration-count: infinite;
-}
+

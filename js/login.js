@@ -57,24 +57,27 @@ class store {
 
 class checkLs {
     static compare(login_data) {
+        
         let LIST = store.getList();
+
         let index = LIST.findIndex(user => {
             if (user.userEmail === login_data.email && user.userPassword === login_data.password) {
                 alert('User Found');
-                if (true) {
-                    window.open('profile.html');
-                }
-
-            } else {
+                window.location.href = 'profile.html';
+                return true;
+            }else{
                 return false;
-
             }
         })
+        
+           
         //    return index > -1 ? LIST[index] : null;
     }
 
 
 }
+
+
 
 
 logIn.addEventListener('click', (e) => {

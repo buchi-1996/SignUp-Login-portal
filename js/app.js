@@ -3,7 +3,7 @@ const signUp = document.getElementById('signup');
 const loader = document.querySelector('.loader');
 const card = document.querySelector('.signup-card');
 const inputs = document.querySelectorAll('input');
-const redirectBtn = document.querySelector('.to-login');
+
 
 
 
@@ -66,7 +66,7 @@ class store{
 
 signUp.addEventListener('click', function (e) {
     loader.style.display = 'block';
-    setTimeout(createUser, 2000);
+    setTimeout(createUser, 3000);
 
     e.preventDefault();
 
@@ -77,15 +77,12 @@ signUp.addEventListener('click', function (e) {
         const userPassword = document.getElementById('password').value.toLowerCase();
 
         loader.style.display = 'none';
-        let loginSwitch = document.querySelector('.login-switch');
         const data = new registeredUsers(userName, userEmail, userPassword);
         console.log(data);
         ui = new UI();
 
         if (userName && userEmail && userPassword) {
-            alert(` SUCCESSFUL`)
-            loginSwitch.style.display = 'none';
-            redirectBtn.style.visibility = 'visible';
+            window.location.href = 'success.html';
             ui.clearInputs(inputs);
            
             store.addToLs(data);
