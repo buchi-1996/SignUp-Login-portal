@@ -59,19 +59,19 @@ class checkLs {
     static compare(login_data) {
         
         let LIST = store.getList();
+        let matchFound = false;
 
         let index = LIST.findIndex(user => {
             if (user.userEmail === login_data.email && user.userPassword === login_data.password) {
                 alert('User Found');
                 window.location.href = 'profile.html';
-                return true;
-            }else{
-                return false;
+                matchFound = true;
             }
         })
         
-           
-        //    return index > -1 ? LIST[index] : null;
+         if (matchFound === false){
+             alert('User not Found');
+         }  
     }
 
 
